@@ -18,6 +18,21 @@
     <script src="./app.js" defer></script>
   </head>
   <body>
+    <script>
+  document.getElementById('nlm-bubble-btn').addEventListener('click', function () {
+    const url = 'https://notebook.google.com/notebook/463ee099-c222-4582-9cfa-9bf47b236a5c';
+    const width = 420;
+    const height = 650;
+    const left = window.screen.width - width - 30;
+    const top = window.screen.height - height - 80;
+
+    window.open(
+      url,
+      'NotebookLMChat',
+      `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`
+    );
+  });
+</script>
     <div class="app-shell">
       <aside class="sidebar">
         <a class="brand" href="#" aria-label="StudyMate AI trang chủ">
